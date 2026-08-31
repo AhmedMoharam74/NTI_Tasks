@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mini Store CRUD</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Mini Store</h1>
+
+        <div class="form">
+            <input
+                type="text"
+                id="productName"
+                placeholder="Product Name"
+            >
+            <input
+                type="number"
+                id="productPrice"
+                placeholder="Product Price"
+            >
+            <input
+                type="text"
+                id="productCategory"
+                placeholder="Product Category"
+            >
+            <input
+                type="number"
+                id="productQuantity"
+                placeholder="Product Quantity"
+            >
+            <button id="addBtn">
+                Add Product
+            </button>
+            <button id="updateBtn">
+                Update Product
+            </button>
+        </div>
+        
+        //search
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search by Name or Category"
+        >
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Category</th>
+                    <th>Quantity</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
